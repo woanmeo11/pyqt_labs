@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>669</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chat room</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,1">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Room ID:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_room_id"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_join_room">
+          <property name="text">
+           <string>Join room</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txt_chat"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="lbl_user">
+          <property name="text">
+           <string>Username</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_input">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_send">
+          <property name="text">
+           <string>Send</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>669</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuChatRoom">
+    <property name="title">
+     <string>Chat room</string>
+    </property>
+    <addaction name="act_login_register"/>
+    <addaction name="act_logout"/>
+    <addaction name="separator"/>
+    <addaction name="act_new_room"/>
+    <addaction name="act_out_room"/>
+    <addaction name="separator"/>
+    <addaction name="act_quit"/>
+   </widget>
+   <addaction name="menuChatRoom"/>
+  </widget>
+  <action name="act_login_register">
+   <property name="text">
+    <string>Login / Register</string>
+   </property>
+  </action>
+  <action name="act_new_room">
+   <property name="text">
+    <string>New room</string>
+   </property>
+  </action>
+  <action name="act_join_room">
+   <property name="text">
+    <string>Join room</string>
+   </property>
+  </action>
+  <action name="act_out_room">
+   <property name="text">
+    <string>Out room</string>
+   </property>
+  </action>
+  <action name="act_logout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="act_quit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
